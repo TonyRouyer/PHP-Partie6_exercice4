@@ -9,7 +9,9 @@
         <a href="index.php?language=PHP&server=LAMP">Clique ici !</a>
         <?php 
             if (isset($_GET['language']) && isset($_GET['server'])) {
-                echo '<p>Le serveur ' . $_GET['language'] . ' utilise ' . $_GET['server'] . '</p>';
+                echo '<p>Le serveur ' . $_GET['server'] . ' utilise ' . $_GET['language'] . '</p>';
+            }else {
+                echo 'il faut renseignier un erveur et un language';
             }
         ?>
     </body>
